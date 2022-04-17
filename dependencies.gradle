@@ -1,0 +1,4 @@
+dependencies {
+    compileOnly("com.github.GTNewHorizons:Galaxy-Space-GTNH:1.1.16d-GTNH:dev") {transitive = false}
+    compileOnly("curse.maven:utility-worlds-228979:2703966") {transitive = false}
+}
