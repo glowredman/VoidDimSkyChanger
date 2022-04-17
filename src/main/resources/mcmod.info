@@ -1,0 +1,21 @@
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Changes the SkyProvider of Utility World's Void Dimensions to use the same as Galaxy Space's Barnarda C",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/glowredman/VoidDimSkyChanger",
+		"updateUrl": "",
+		"authorList": ["glowredman"],
+		"credits": "POPlol333 (idea)",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": ["GalaxySpace@[1.1.12-GTNH,)", "utilityworlds"],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
+}
