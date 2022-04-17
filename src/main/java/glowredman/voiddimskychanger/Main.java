@@ -1,9 +1,9 @@
 package glowredman.voiddimskychanger;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 @Mod(acceptedMinecraftVersions = "[1.7.10]",
     acceptableRemoteVersions = "*",
@@ -15,7 +15,7 @@ public class Main {
     
     @EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(new SkyHandler());
+        FMLCommonHandler.instance().bus().register(new SkyHandler());
     }
 
 }
