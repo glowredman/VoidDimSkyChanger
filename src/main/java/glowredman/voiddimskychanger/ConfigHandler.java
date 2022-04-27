@@ -74,7 +74,7 @@ public class ConfigHandler {
         sunRadius = config.get(SKY, "sunRadius", 10.5, "", Double.MIN_VALUE, Double.MAX_VALUE).getDouble();
         innerFlareRadius = Math.max(sunRadius, config.get(SKY, "innerFlareRadius", 20.0, "Must be larger than sunRadius", Double.MIN_VALUE, Double.MAX_VALUE).getDouble());
         outerFlareRadius = Math.max(innerFlareRadius, config.get(SKY, "outerFlareRadius", 40.0, "Must be larger than innerFlareRadius", Double.MIN_VALUE, Double.MAX_VALUE).getDouble());
-        sunTexture = config.getString("", SKY, "default", "Leave empty to use the vanilla sun texture, otherwise specify a resource location to provide a texture.");
+        sunTexture = config.getString("sunTexture", SKY, "", "Leave empty to use the vanilla sun texture, otherwise specify a resource location to provide a texture.");
         
         if (config.hasChanged()) {
             config.save();
