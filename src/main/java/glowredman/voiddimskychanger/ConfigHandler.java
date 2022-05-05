@@ -29,7 +29,7 @@ public class ConfigHandler {
 
         config.load();
         
-        config.setCategoryComment(SKY, "Define your own sky renderer based on GalaxySpace's SkyProviderBase. To use this, set skyRenderer=glowredman.voiddimskychanger.SkyProviderGS");
+        config.setCategoryComment(SKY, "Define your own sky renderer based on GalaxySpace's SkyProviderBase. To use this, set skyRenderer=glowredman.voiddimskychanger.SkyProviderGS or skyRenderer=glowredman.voiddimskychanger.SkyProviderGS$WithoutHorizon");
         
         getMoonPhase = config.getBoolean("getMoonPhase", METHODS, false, "Set to 'true' to use the default methods in WorldProvider");
         calcSunriseSunsetColors = config.getBoolean("calcSunriseSunsetColors", METHODS, false, "Set to 'true' to use the default methods in WorldProvider");
